@@ -253,6 +253,60 @@ justify-content:center;
   }
 }
 
+/* SERVICES */
+.services{
+  padding:5rem 0;
+
+}
+.services .services__wrapper{
+  display:grid;
+  grid-template-columns:50% 50%;
+  grid-gap:10rem;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+
+}
+.services .services__card{
+  padding:3rem;
+  text-align:center;
+  border-radius:1rem;
+  transition:0.5s ease;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+.services .services__card:hover{
+  scale:1.1;
+  transition:0.5s ease;
+  background:var(--dark);
+}
+.services .services__card:hover h3,.services .services__card:hover p{
+  color:var(--light);
+}
+.services h2{
+  font-size:7rem;
+  font-weight:100;
+  letter-spacing:3rem;
+}
+.services .services__title{
+  display:flex;
+  align-items:center;
+  gap:2rem;
+  justify-content:center;
+}
+.services .services__title i{
+color:var(--primary);
+font-size:3.5rem;
+}
+
+
+.services .services__title{
+  font-size:2.5rem;
+  font-weight:600;  
+}
+.services .services__card p{
+margin:2rem 0;
+text-align:justify;
+}
 /* REPEATABLE PATTERNS */
   :root {
     --primary: #fb4d3d;
