@@ -317,6 +317,59 @@ text-align:justify;
   
 }
 }
+
+/* PROJECTS */
+.projects .projects__wrapper{
+  display:grid;
+  grid-template-columns:33.33% 33.33% 33.33%;
+}
+.projects .projects__card img{
+  width:100%;
+}
+.projects .projects__card::before{
+  content:"";
+  width:100%;
+  height:100%;
+  background-color:var(--dark);
+  display:block;
+  position:absolute;
+  opacity:50%;
+  transition:0.5s ease;
+}
+.projects .projects__card{
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.projects .projects__text{
+  display:none;
+  position:absolute;
+  background:rgb(17%, 17%, 17%, 0.5);
+  max-width:40rem;
+  text-align:center;
+  padding:2rem;
+}
+.projects .projects__text h3{
+  color:var(--light);
+  font-size:3rem;
+  font-weight:600;
+}
+.projects .projects__text p{
+  color:var(--light);
+  text-align:justify;
+  margin:3rem 0;
+}
+.projects .projects__card:hover::before{
+  content:"";
+  width:0%;
+  height:0%;
+  background-color:var(--dark);
+  transition:0.5s ease;
+}
+.projects .projects__card:hover .projects__text{
+  display:block;
+}
 /* REPEATABLE PATTERNS */
   :root {
     --primary: #fb4d3d;
