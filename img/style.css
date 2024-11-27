@@ -393,22 +393,22 @@ text-align:justify;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding: 40px;
     color: var(--light);
+    padding-top:1.5rem;
   }
   .footer .footer__social{
     display: flex;
     align-items: center;
-    gap: 3rem;
+    gap: 4rem;
   }
   .footer .footer__social a{
     color: var(--light);
   }
   @media screen and (max-width:500px) {
     .footer .footer__wrapper{
-      display:flex;;
+      display:flex;
       flex-direction:column;
-      gap:3rem;
+      gap:1.5rem;
       padding-top:3rem;
     }
     .footer .footer__wrapper img{
