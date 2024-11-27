@@ -385,10 +385,10 @@ text-align:justify;
     display:block;
   }
   }
- /* CONTACT */
-  .contact{
-    padding:5rem 0;
-  }
+/* CONTACT */
+.contact{
+  padding:5rem 0;
+}
   .contact h2{
     font-size:7rem;
     font-weight:100;
@@ -396,7 +396,7 @@ text-align:justify;
   }
   .contact .contact__wrapper{
     display:grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns:50% 50%;
     grid-gap:10rem;
     transform:translateY(10rem);
   }
@@ -426,13 +426,14 @@ text-align:justify;
     font-size:3rem;
     color:var(--primary);
   }
-  @media screen and (max-width: 500px){}
+  @media screen and (max-width:500px){
     .contact .contact__wrapper{
       display:flex;
       flex-direction:column-reverse;
       gap:0rem;
       transform:translateY(3rem);
     }
+  }
     .contact h2{
       font-size:5rem;
       text-align:center;
