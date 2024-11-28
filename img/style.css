@@ -516,7 +516,7 @@ text-align:justify;
 /* SECTION */
 .packages{
   background-color: var(--dark);
-  position:relative
+  position:relative;
 }
 .packages .packages__text{
   color:var(--light);
@@ -534,24 +534,60 @@ text-align:justify;
   height:5rem;
   list-style-type: disc;
 }
+.packages img{
+  width:50%;
+}
 .packages .packages__item:nth-child(even){
   display:flex;
   flex-direction:row-reverse;
-  margin-left:10rem
+  margin-left:10rem;
 }
 .packages .packages__item:nth-child(odd){
   display:flex;
   flex-direction:row;
-  gap:15rem;
-}
-.packages img{
-  width:50%;
+
 }
 .packages .packages__text a{
   width:15rem;
 }
 
+@media screen and (max-width:500px){
+  .packages{
+    background-color: var(--dark);
+    position: relative;
+  }
 
+.packages .packages__text{
+  color:var(--light);
+  margin:8rem;
+  display:flex;
+  justify-content:space-between;
+  flex-direction:column;
+  gap:3rem;
+  align-items:center;
+}
+.packages h2{
+  font-size:5rem;
+  font-weight:100;
+  text-align:center;
+}
+.packages li{
+  font-size:1.5rem;
+  height:5rem;
+}
+.packages img{
+  width:100%;
+}
+.packages .packages__item:nth-child(even){
+  display:flex;
+  flex-direction:column;
+  margin:0;
+}
+.packages .packages__item:nth-child(odd){
+  display:flex;
+  flex-direction:column;
+}
+}
 
 /* REPEATABLE PATTERNS */
   :root {
