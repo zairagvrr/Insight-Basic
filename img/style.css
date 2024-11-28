@@ -128,6 +128,7 @@
     position:fixed;
     width:100%;
     transform:translateY(5rem);
+    z-index:999;
   }
   .header .header__nav ul{
     display:flex;
@@ -213,45 +214,47 @@
   }
 
   /* BANNER */
-  .banner{
-background-image: url("/img/banner-img.png");
-background-size:cover;
-background-repeat:no-repeat;
-background-position:center;
-height:100vh;
-display:flex;
-align-items:center;
-justify-content:center;
-  }
-.banner h1{
-  color:var(--light);
-  font-size:8rem;
-  max-width:80rem;
-  text-align:center;
-}
-.banner .banner__btn{
-  display:flex;
-  gap:5rem;
-  margin-top:5rem;
-  justify-content:center;
-}
-.banner .banner__btn a{
-  width:20rem;
-}
-@media screen and (max-width:500px){
-  .banner h1{
-    font-size:6rem;
-  }
-  .banner .banner__btn{
-    display:flex;
-    flex-direction:column;
-    gap:1.5rem;
-    align-items:center;
-  }
-  .banner .banner__btn a{
-    width:70%;
-  }
-}
+        .banner{
+          background-image: url("./banner-img.png");
+          background-size:cover;
+          background-repeat:no-repeat;
+          background-position:center;
+          height:100vh;
+          display:flex;
+          align-items:center;
+          justify-content:center;
+        }
+        
+        .banner h1{
+        color:var(--light);
+        font-size:8rem;
+        max-width:80rem;
+        text-align:center;
+        }
+        .banner .banner__btn{
+          display:flex;
+          gap:5rem;
+          margin-top:5rem;
+          justify-content:center
+        }
+        .banner .banner__btn a{
+        width:20rem;
+        }
+
+        @media screen and (max-width:500px){
+          .banner h1{
+            font-size:6rem;
+          }
+          .banner .banner__btn{
+            display:flex;
+            flex-direction: column;
+            gap:1.5rem;
+            align-items:center;
+          }
+          .banner .banner__btn a{
+            width:70;
+          }
+        }
 
 /* SERVICES */
 .services{
@@ -436,7 +439,7 @@ text-align:justify;
   }
     .contact h2{
       font-size:5rem;
-      text-align:center;
+      
     }
   
   /* FOOTER */
@@ -475,6 +478,80 @@ text-align:justify;
     gap:4rem;
     }
   }
+
+      /* BANNERS */
+      .bannerS{
+        background-image: url("./Group\ 22\ \(1\).png");
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-position:center;
+        height:100vh;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        position:relative;
+      }
+      .bannerS h1{
+        font-size:100px;
+      color:var(--light);
+      max-width:80rem;
+      text-align:center;
+      letter-spacing:2rem;;
+      font-weight:150;
+      letter-spacing:3rem;
+      }
+      .bannerS a{
+        color:var(--primary);
+        font-size:3rem;
+        position:absolute;
+        bottom:3rem;
+      }
+      @media screen and (max-width:500px){
+        .bannerS h1{
+          font-size:5rem;
+          letter-spacing:2rem;
+        }
+      }
+
+/* SECTION */
+.packages{
+  background-color: var(--dark);
+  position:relative
+}
+.packages .packages__text{
+  color:var(--light);
+  margin:10rem;
+  display:flex;
+  justify-content:space-between;
+  flex-direction:column;
+}
+.packages h2{
+  font-size:10rem;
+  font-weight:100;
+}
+.packages li{
+  font-size:2rem;
+  height:5rem;
+  list-style-type: disc;
+}
+.packages .packages__item:nth-child(even){
+  display:flex;
+  flex-direction:row-reverse;
+  margin-left:10rem
+}
+.packages .packages__item:nth-child(odd){
+  display:flex;
+  flex-direction:row;
+  gap:15rem;
+}
+.packages img{
+  width:50%;
+}
+.packages .packages__text a{
+  width:15rem;
+}
+
+
 
 /* REPEATABLE PATTERNS */
   :root {
